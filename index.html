@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of webpage -->
+    <title>PilotHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- browser tab icon -->
+  <link rel="icon" href="maverick.png" />
+
+  <body>
+    <header class="jumbotron">
+      <h1>PilotHub</h1>
+    </header>
+<!-- placeholder and input box for airport search -->
+    <div class="row">
+      <div class="input-field col s3">
+        <input
+          placeholder="Flying to next?"
+          id="airport_name"
+          id="city"
+          type="text"
+          class="validate autocomplete"
+        />
+        <label for="airport_name">Airport Identifier</label>
+        <!-- button to initiate search -->
+        <button
+          type="submit"
+          class="btn #64b5f6 blue lighten-2 btn-search"
+          id="runSearch"
+        >
+          Search
+        </button>
+      </div>
+      <div class="search-list"></div>
+      <!-- hide function for card containers -->
+      <div class="col s4 delete-hide hide" id="remove-hide">
+        <label for="airport-info">Airport Information</label>
+        <div class="row">
+          <div class="cards airport-info"></div>
+        </div>
+      </div>
+
+      <div class="col s4 delete-hide hide" id="remove-hide">
+        <label for="beer-info">Nearest Brewery Information</label>
+        <div class="row">
+          <!-- id = brewery_name -->
+          <div class="cards beer-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/beer.js"></script>
+    <footer class="blue lighten-2">
+      <h6 class="blue lighten-2">
+        Made with ❤️️ by Brian, Erik, Meghan, Nicholas, James & Jon.
+      </h6>
+      <p class="copyright blue lighten-2">&copy; 2022 PilotHub, Inc.</p>
+    </footer>
+  </body>
+</html>
