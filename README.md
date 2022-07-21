@@ -1,2 +1,2 @@
 # PilotHub
-PilotHub project Local Brewery finder for off duty Pilots
+Local Brewery finder for off duty Pilots
