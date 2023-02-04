@@ -1,3 +1,5 @@
+
+
 var beerInfo = document.querySelector(".beer-info");
 
 
